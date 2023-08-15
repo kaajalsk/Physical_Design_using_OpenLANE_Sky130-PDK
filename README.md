@@ -17,14 +17,14 @@ OpenLane is an RTL to GDSII infrastructure library based on several components i
 # Results only:
 * All the Layout views are generated using Magic Tool.
   
-# Stage 1:-Synthesis:-
-The Command used:- run_synthesis
-Results: Calculation of the flop ratio:1613/14876=0.1084%
+# Stage 1:-Synthesis
+* The Command used:- run_synthesis
+* Results: Calculation of the flop ratio:1613/14876=0.1084%
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/e71f8beb-a1a2-46c2-b94b-fb66a7be34ab)
 
 # Stage 2:-Floorplan
-The Command used:- run _floorplan
-Results:
+* The Command used:- run _floorplan
+* Results:
 
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/b7f2bdee-827f-4b5f-9576-405a1bf019c6)
 
@@ -33,28 +33,28 @@ Results:
 
 # Stage 3:-Placement
 
-The Command used:- run_placement
-Results:
+* The Command used:- run_placement
+* Results:
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/3a9d6d1e-1778-4a06-8eb7-5d739b6ad1f4)
 
 # The below steps are after including the standard cell.
 # Stage 4:-Clock Tree Synthesis(CTS)
-The Command used:- run_cts
-Results: The generated new .def file is shown below:
+* The Command used:- run_cts
+* Results: The generated new .def file is shown below:
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/a8d73a50-226a-430f-a495-f93a2eb51521)
 
 
 # Stage 5:-Power Distribution Network(PDN)
-The Command used:- gen_pdn
-Results: To check  if the final pdn was successful we can check the pdn.def file.
+* The Command used:- gen_pdn
+* Results: To check  if the final pdn was successful we can check the pdn.def file.
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/b5d3994b-3534-42f6-b97c-9b134c7fd352)
 
 
 
 # Stage 6:-Routing using Triton Route
-The Command used:- run_routing
-Results: The Final routing is done after approx time of 30min -1hr, we can check in the run results.
-![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/f2fd8941-2c5f-414e-915c-a93701f73d5d)
+* The Command used:- run_routing
+* Results: The Final routing is done after approx time of 30min -1hr, we can check in the run results.
+
 
 
 # Stage 7: GDSII File 
@@ -62,7 +62,7 @@ A GDS file is an integrated circuit design saved in GDSII Stream format. A GDS f
 
 In OpenLANE Flow the  GDSII file is generated in the results/signoff/magic directory.
 
-Results: The Final output is shown below:-
+* Results: The Final output is shown below:-
 
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/6c24a9f6-e9d1-4c86-9dc7-fc63a6b148ef)
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/a3bf3b48-7600-4dfc-85ec-8d8d09d40797)
@@ -95,15 +95,18 @@ set ::env(EXTRA_LEFS) glob "$::env(OPENLANE_ROOT)/designs/$::env(DESIGN_NAME)/sr
 * After the integration, run the synthesis and check whether the cell has been dumped or not in our OpenLANE Flow.
 
 # Results: The integrated standard cell results are shown below:-
-Inverter cell:
+* Inverter cell:-
+  
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/ab80f7a5-63b1-40e7-b54c-99c8388535f2)
 
-SPICE extraction and Simulation:
+* SPICE extraction and Simulation:-
+  
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/0356f964-6ca3-44a2-9a3a-481c51cfe5a1)
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/a5b15cd1-a073-4866-a472-60bffe513002)
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/0233e91a-8d86-4b7f-9c8a-50da146cb105)
 
-The included standard cell - sky130_vsdinv
+* The included standard cell - sky130_vsdinv:-
+  
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/4220b34c-3c62-4035-b8bc-a617e087138d)
 ![image](https://github.com/kaajalsk/Physical_Design_using_OpenLANE_Sky130-PDK/assets/141938909/ee51b00a-d55d-4d2d-bb9a-b8d4356645f5)
 
